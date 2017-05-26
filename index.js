@@ -13,6 +13,9 @@ module.exports = {
       }
     }
   },
+  isDevelopingAddon: function() {
+    return true;
+  },
   included: function(parent) {
     this.addonOptions = parent.options && parent.options.myAddon || {};
     this.addonOptions.theme = this.addonOptions.theme || 'light';

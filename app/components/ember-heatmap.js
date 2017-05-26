@@ -1,0 +1,1 @@
+export { default } from 'ember-heatmap/components/ember-heatmap';
