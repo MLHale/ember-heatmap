@@ -20,6 +20,7 @@ module.exports = {
     // this.addonOptions = parent.options && parent.options.myAddon || {};
     // this.addonOptions.theme = this.addonOptions.theme || 'light';
     this._super.included.apply(this, arguments);
+    this.import('vendor/ember-heatmap.css');
     this.import('vendor/heatmapjs/heatmap.js');
   },
 };

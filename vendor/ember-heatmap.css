@@ -1,0 +1,11 @@
+.heatmap-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: .3s ease all;
+  -moz-transition: .3s ease all;
+  transition: .3s ease all;
+  opacity: .6;
+  width: 100%;
+  height: 100%;
+}
