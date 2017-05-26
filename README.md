@@ -1,6 +1,6 @@
 # ember-heatmap
 
-This README outlines the details of collaborating on this Ember addon.
+Documentation will be forthcoming. 
 
 ## Installation
 
