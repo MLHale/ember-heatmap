@@ -16,9 +16,9 @@ module.exports = {
   isDevelopingAddon: function() {
     return true;
   },
-  included: function(parent) {
-    this.addonOptions = parent.options && parent.options.myAddon || {};
-    this.addonOptions.theme = this.addonOptions.theme || 'light';
+  included: function(app) {
+    // this.addonOptions = parent.options && parent.options.myAddon || {};
+    // this.addonOptions.theme = this.addonOptions.theme || 'light';
     this._super.included.apply(this, arguments);
     this.import('vendor/heatmapjs/heatmap.js');
   },
