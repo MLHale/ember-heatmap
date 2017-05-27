@@ -38,15 +38,13 @@ export default Ember.Component.extend({
     this.set('hasRendered', true);
   }),
 
-  dataChanged: Ember.observer('data', function(){
-    //handling incremental update would be better
+  dataChanged: Ember.observer('data.@each', function(){
+    //incremental update would be better
+    // console.log('date changed');
+    var data = this.get('data');
+    console.log('data');
     if (this.get('hasRendered')){
-      this.get('map').setData({
-        max: this.get('max'),
-        min: this.get('min'),
-        data: this.get('data')
-      });
-      // this.get('map').repaint()
+      this.get('map').addData(data.objectAt(data.length - 1));
     }
   }),
 
