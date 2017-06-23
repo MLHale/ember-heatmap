@@ -1,6 +1,6 @@
 {
   "name": "ember-heatmap",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A small addon to integrate heatmap.js with ember apps.",
   "keywords": [
     "ember-addon",
