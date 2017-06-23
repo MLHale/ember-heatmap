@@ -13,7 +13,10 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/MLHale/ember-heatmap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MLHale/ember-heatmap",
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
