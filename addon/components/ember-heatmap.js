@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import layout from '../templates/components/ember-heatmap';
+import h337 from 'npm:heatmapjs'
 
 export default Ember.Component.extend({
   layout,
@@ -42,13 +43,18 @@ export default Ember.Component.extend({
     //incremental update would be better
     // console.log('date changed');
     var data = this.get('data');
-    console.log('data');
     if (this.get('hasRendered')){
       this.get('map').addData(data.objectAt(data.length - 1));
     }
   }),
 
   teardownHeatmap: Ember.on('willDestroyElement', function() {
-    this.get('ember-heatmap').destroy();
+    var data = {
+      max: 100,
+      min: 0,
+      data: []
+    };
+    this.get('map').setData(data);
+    this.destroy()
   }),
 });
