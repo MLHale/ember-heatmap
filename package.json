@@ -8,12 +8,12 @@
     "ember-heatmap"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Matt Hale",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/MLHale/ember-heatmap",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -52,6 +52,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://github.com/MLHale/ember-heatmap"
+    "demoURL": "http://mlhale.github.io/ember-heatmap-demo"
   }
 }

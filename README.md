@@ -1,4 +1,4 @@
-# Ember Heatmap
+# Ember Heatmap [![Ember Observer Score](http://emberobserver.com/badges/ember-heatmap.svg)](http://emberobserver.com/addons/ember-heatmap) [![npm version](https://badge.fury.io/js/ember-heatmap.svg)](https://badge.fury.io/js/ember-heatmap)
 
 Ember heatmap is a small Ember Addon that componentizes [heatmap.js](https://github.com/pa7/heatmap.js) for consumption and use in ember apps.
 
@@ -8,9 +8,13 @@ Ember heatmap is a small Ember Addon that componentizes [heatmap.js](https://git
 ember install ember-heatmap
 ```
 
+## Demo
+
+http://mlhale.github.io/ember-heatmap-demo/
+
 ## Usage
 
-Ember heatmap may be invoked in your controllers and components as:
+Ember heatmap may be invoked as:
 
 ```hbs
 {{ember-heatmap config=configObj data=dataPts min=minValue max=maxValue}}
