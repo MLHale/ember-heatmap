@@ -44,7 +44,15 @@ export default Ember.Component.extend({
     // console.log('date changed');
     var data = this.get('data');
     if (this.get('hasRendered')){
-      this.get('map').addData(data.objectAt(data.length - 1));
+      if (this.get('swappable')) {
+        this.get('map').setData({
+          max: this.get('max'),
+          min: this.get('min'),
+          data: this.get('data')
+        });
+      } else {
+        this.get('map').addData(data.objectAt(data.length - 1));
+      }
     }
   }),
 
