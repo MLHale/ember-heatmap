@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import $ from 'jquery';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
 	heatmapdata: [],
 	heatmapmax: 0,
 	heatmapconfig: {
@@ -17,8 +18,8 @@ export default Ember.Controller.extend({
 		//create some random data to test the heatmap
 		var points = [];
 		var max = 0;
-		var width = Ember.$(window).width();
-		var height = Ember.$(window).height();
+		var width = $(window).width();
+		var height = $(window).height();
 		var len = 400;
 
 		while (len--) {
