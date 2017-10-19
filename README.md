@@ -38,6 +38,7 @@ Where:
 	* a ```DataPoint``` is of type ```{x:xVal, y:yVal, value:val}```
 * ```minValue``` is a number representing the minimum value a data point can take on (used for scaling the heatmap indicators)
 * ```maxValue``` is a number representing the maxmimum value a data point can take on (used for scaling the heatmap indicators)
+* ```swappable``` is a boolean flag that indicates that data should be entirely swapped out of the heatmap anytime the bound data is changed. Default is `false`, implying incremental update (i.e. the app will gather any new points in the heatmap and update the map accordingly. Use `swappable=true` only for use cases that do not involve incremental updates.
 
 ## Example
 in ```./app/controllers/application.js```:
